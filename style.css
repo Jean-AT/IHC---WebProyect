@@ -1,0 +1,129 @@
+body{
+    background-image: url('images.png');
+
+}
+.top-header{
+    background-color:rgb(218, 218, 218);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-style:unset;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0; /* Añade esto */
+    padding: 10px; /* Añade esto */
+
+}
+
+.menu-horizontal > li{
+    display: flex; /* Cambia a flex */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Añade esto para que el menú vertical se posicione respecto al li */
+    margin-left: 100px;
+}
+
+.menu-horizontal > li > a{ /* Estiliza los enlaces */
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-horizontal > li > a:hover{
+    color: rgb(172, 163, 163);
+}
+
+.btn-cuenta {
+    display: flex; /* Usa flex */
+    padding: 0 !important; /* Quita el padding heredado */
+}
+
+.btn-cuenta img{
+    margin-left: 10px;
+    height: 45px;
+    width: 45px;
+    display: block;
+}
+
+.menu-vertical{
+    padding: 0;
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: rgba(204, 202, 195, 0.808);
+    color: black;
+    margin-top: 15px; /* Ajusta la posición */
+    top: 70%; /* Cambia margin-top por top: 100% */
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover { 
+    background-color: rgba(189, 184, 184, 0.356);
+    cursor: pointer;
+}
+
+.menu-vertical li{
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 15px 15px 15px 15px;
+}
+
+main{
+    flex: 1;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    padding: 40px 200px;
+    align-items: center;
+}
+
+.hero img {
+  height: 400px;
+}
+
+.text{
+    display: grid;          /* 1. Arranges children in a row by default */
+    grid-template-rows: auto;
+    align-items: center;
+    font-size: 20px !important;
+    margin-left: 10rem;
+    background-color: #0E5B80;
+    color: white;
+    padding: 2rem;
+}
+.text > h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.text > p{
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+.comenzar-button{
+    justify-self: center;
+}
+.comenzar-btn{
+    background-color:#1487BF;
+    border: none;
+    border-radius: 15px;
+    color:white;
+    height: 35px;
+    width: 120px;
+    font-weight: 600;
+    cursor: pointer;
+    place-items: center;
+}
