@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/Styles/Login.css">
     <link rel="stylesheet" href="/Styles/style.css">
 </head>
 <body>
@@ -32,18 +33,28 @@
         </ul>
     </nav>
     <main>
-        <section class="hero">
-            <div class="imagen">
-                <img src="/Imagenes/images.png" alt="Logo de la Pagina">
-            </div>
-            <div class="text">
-                <h1>AquaSafe360</h1>
-                <p>"Tecnologia que detecta, alerta y protege a cada deportista"</p>
-                <div class="comenzar-button">
-                    <a href="login.html">
-                        <button class="comenzar-btn">Comenzar</button>
-                    </a>
-                </div>
+        <section class="login-hero">
+            <div class="login">
+                <img src="/Imagenes/usuario.png" alt="Logo Usuario de Login">
+                <form class="login-form">
+                    <div class="form-group">
+                        <span class="label">Correo Electronico:</span>
+                        <input type="email" name="email" placeholder="ejemplo@Correo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="label">Contraseña:</span>
+                        <input type="contraseña" name="contraseña" placeholder="ejemplo010">
+                    </div>
+                    
+                    <button class="btn-login">
+                        <a href="index.html">Iniciar Sesion</a>
+                    </button>
+                    <button class="btn-login">
+                        <a href="registration.html">Registrarse</a>
+                    </button>
+                </form>
+                
             </div>
         </section>
     </main>

@@ -1,9 +1,10 @@
 body{
-    background-image: url('images.png');
-
+    background-image: url('/Imagenes/fondo.jpg');
+    margin: 0;
+    padding: 0;
 }
 .top-header{
-    background-color:rgb(218, 218, 218);
+    background-color:rgb(255, 255, 255);
     display: flex;
     align-items: center;
     padding: 10px;
@@ -126,4 +127,16 @@ main{
     font-weight: 600;
     cursor: pointer;
     place-items: center;
+}
+
+.btn-inicio {
+    display: flex; /* Usa flex */
+    padding: 0 !important; /* Quita el padding heredado */
+}
+
+.btn-inicio img{
+    margin-left: 10px;
+    height: 45px;
+    width: 125x;
+    display: block;
 }
