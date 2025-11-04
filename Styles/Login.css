@@ -57,7 +57,7 @@ input:focus {
     cursor: pointer;
 }
 
-.btn-login a{
+.btn-login > a{
     list-style: none;
 }
 .btn-login:hover {
