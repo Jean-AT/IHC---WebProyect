@@ -91,7 +91,9 @@ main{
 .hero{
     display: flex;
     justify-content: center;
-    padding: 40px 200px;
+    padding: 8rem;
+    margin: 9.5rem;
+    margin-bottom: 13rem;
     align-items: center;
 }
 
@@ -216,7 +218,25 @@ main{
     font-size: 25px;
     font-weight: bold;
 }
-.div-temp { grid-area: 3 / 1 / 4 / 2; }
+.div-temp {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #0E5B80;
+    margin: 4rem;
+    padding: 2rem;
+    justify-items: center;
+    border-radius: 15px;
+}
+.logo-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.logo-temp img {
+    height: 40px;
+    width: 40px;
+}
 .div-vision { grid-area: 3 / 2 / 4 / 3; }
 .div-vientos { grid-area: 3 / 3 / 4 / 5; }
 .div-calor { grid-area: 3 / 5 / 4 / 7; }
