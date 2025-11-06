@@ -375,13 +375,72 @@ main{
 /*Style para seguridad*/
 .seguridad-hero{
     background-color: #1487BF;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-
+    padding: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .seguridad-hero h1{
     color: white;
+    padding: 2rem;
+    padding-bottom: 0;
+    padding-left: 4rem;
 }
-
+.div-alertasP{
+    display: flex;
+    align-items: row;
+    margin: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    gap: 5rem;
+    background-color: #D9D9D9;
+    padding: 1rem;
+    padding-left: 3rem;
+    border-radius: 25px;
+    height: 100px;
+}
+.div-alertasP img{
+    width: 50px;
+    height: 50px;
+    padding-top: 25px;
+    justify-self:last baseline;
+}
+.div-alertasP h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-alerta{
+    border: none;
+    background-color: #40E0D0;
+    height: 50px;
+    margin-top: 1.5rem;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.btn-alerta a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+}
+.btn-corriente{
+    background-color: #0C4B69;
+    margin: 0 3rem 0 3rem;
+    padding: 1rem;
+}
+.btn-corriente img{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-self: center;
+}
+.div-videosE{
+    margin: 5rem;
+    margin-top: 1rem;
+}
+.div-videosE img{
+    width: 400px;
+    height: 400px;
+    margin: 4rem;
+    border-radius:50px;
+}
 
 
 /*Style para mapas*/
@@ -391,14 +450,49 @@ main{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 .parent-mapas{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
-
-.div-mapa { grid-area: 1 / 1 / 2 / 2; }
-.div-texmap { grid-area: 1 / 2 / 2 / 3; }
-.div-texnoti { grid-area: 2 / 1 / 3 / 2; }
-.div-piscina { grid-area: 2 / 2 / 3 / 3; }
+.div-mapa {
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    justify-content: center;
+}
+.div-mapa img{
+    width: 600px;
+    height: 300px;
+    margin: 5rem;
+    border-radius: 25px;
+}
+.div-texmap { grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+}
+.div-texnoti { grid-area: 2 / 1 / 3 / 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+}
+.div-piscina {
+    grid-area: 2 / 2 / 3 / 3; 
+    display: flex;
+    justify-content: center;
+}
+.div-piscina img{
+    width: 400px;
+    height: 400px;
+    margin: 5rem;
+    margin-top: 0rem;
+    border-radius: 25px;
+    justify-self: center;
+}
