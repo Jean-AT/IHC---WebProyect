@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+</head>
+<body>
+    <nav class="top-header">
+        <ul class="menu-horizontal">
+            <li>
+                <a href="http://127.0.0.1:5500/index.html" class="btn-inicio">
+                    <img src="./Document_files/logo.png" alt="Imagen de inicio">
+                </a>
+            </li>
+            <li> <a href="http://127.0.0.1:5500/index.html">INICIO</a></li>
+            <li> <a href="http://127.0.0.1:5500/index.html#Monitoreo">MONITOREO</a></li>
+            <li><a href="http://127.0.0.1:5500/Seguridad.html">SEGURIDAD</a></li>
+            <li><a href="http://127.0.0.1:5500/Mapas.html">MAPAS</a></li>
+            <li>
+                <a href="http://127.0.0.1:5500/Contactanos.html">CONTACTANOS</a>
+                <ul class="menu-vertical">
+                    <li>WhatsApp</li>
+                    <li>Instagram</li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5500/Nosotro.html">NOSOTROS</a></li>
+            <li>
+                <a href="http://127.0.0.1:5500/login.html" class="btn-cuenta"><img src="./Document_files/usuario.png" alt="imagen de cuenta"></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="imagen">
+                <img src="./Document_files/logo-removebg-preview.png" alt="Logo de la Pagina">
+            </div>
+            <div class="text">
+                <h1>AquaSafe360</h1>
+                <p>"Tecnologia que detecta, alerta y protege a cada deportista"</p>
+                <div class="comenzar-button">
+                    <a href="http://127.0.0.1:5500/login.html">
+                        <button class="comenzar-btn">Comenzar</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="#Monitoreo" class="monitoreo-hero">
+            <div class="parent-monitoreo">
+                <div class="top-monitoreo">
+                    <h1>MONITOREO</h1>
+                    <p>
+                        "Tegonologia que detecta, alerta y protege a 
+                                    cada deportista"
+                    </p>
+                </div>
+                <div class="div-condiciones">
+                    <p>Condiciones Actuales</p>
+                </div>
+                <div class="div-alerta">
+                    <p>Alertas</p>
+                </div>
+                <div class="div-historial"> 
+                    <p>Historial</p>
+                </div>
+                <div class="div-temp">
+                    <p>Temperatura:</p>
+                    <div class="logo-temp">
+                        <img src="./Document_files/termometro.png" alt="Termometro Logo">
+                        <p>20°C</p>
+                    </div>
+                </div>
+                <div class="div-vision">    
+                    <p>Visibilidad</p>
+                    <div class="logo-vis">
+                        <img src="./Document_files/ojo.png" alt="Ojo Logo">
+                        <p>3m</p>
+                    </div>
+                </div>
+                <div class="div-vientos">
+                    <img src="./Document_files/viento.png" alt="Viento Logo">
+                    <h3>VIENTOS FUERTES</h3>
+                </div>
+                <div class="div-calor">
+                    <img src="./Document_files/sol.png" alt="Sol Logo">
+                    <div class="text-sol">
+                        <h3>CALOR INTENSO</h3>
+                        <p>Ayer</p>
+                    </div>
+                </div>
+                <div class="div-riesgo">
+                    <h3>Nivel De Riesgo:</h3>
+                    <div class="logo-riesgo">
+                        <img src="./Document_files/medidor.png" alt="medidor Logo">
+                        <p>MEDIO</p>
+                    </div>
+                </div>
+                <div class="div-oleaje">
+                    <img src="./Document_files/olas.png" alt="Olas Logo">
+                    <div class="text-olas">
+                        <h3>OLEAJE INTENSO</h3>
+                        <p>20:39</p>
+                    </div>
+                </div>
+                <div class="div-lluvia">
+                    <img src="./Document_files/lluvia.png" alt="lluvia Logo">
+                    <div class="text-lluvia">
+                        <h3>LLUVIA MODERADA</h3>
+                        <p>Hoy</p>
+                </div>
+            </div>
+        </div></section>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
