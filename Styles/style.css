@@ -153,9 +153,9 @@ main{
     width: 125x;
     display: block;
 }
-/*Style code for the monitoreo
-    Estilos para la seccion de Monitoreo
-*/
+
+/*Estilos para la seccion de Monitoreo*/
+
 .parent-monitoreo {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -496,3 +496,34 @@ main{
     border-radius: 25px;
     justify-self: center;
 }
+
+/*Style para contactanos*/
+.parent-contactanos {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div-toptext { grid-area: 1 / 1 / 2 / 5; }
+.div-x { grid-area: 2 / 1 / 3 / 2; }
+.div-f { grid-area: 3 / 1 / 4 / 2; }
+.div-i { grid-area: 4 / 1 / 5 / 2; }
+.div-w { grid-area: 2 / 3 / 3 / 4; }
+.div-t { grid-area: 3 / 3 / 4 / 4; }
+.div-y { grid-area: 4 / 3 / 5 / 4; }
+
+/*Style para nosotros*/
+
+.parent-nosotros {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div-nosotros { grid-area: 1 / 1 / 2 / 3; }
+.div-vis { grid-area: 2 / 1 / 3 / 2; }
+.div-mision { grid-area: 2 / 2 / 3 / 3; }
