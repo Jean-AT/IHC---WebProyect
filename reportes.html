@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alertas Recibidas</title>
+    <title>Reportes</title>
     <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="Styles/alertas.css">
+    <link rel="stylesheet" href="Styles/reportes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -59,20 +59,38 @@
             </li>
         </ul>
     </nav>
-    <main class="alertas-main">
-        <h1>Alertas Recibidas</h1>
-        <div class="alertas-container">
-            <div class="alerta leve">
-                <h2>Nivel de Problema: Leve</h2>
-                <p>Playa: Playa Serena</p>
+    <main class="reportes-container">
+        <div class="control-column">
+            <div class="mapa-title">
+                <h2>MAPA INTERACTIVO</h2>
             </div>
-            <div class="alerta medio">
-                <h2>Nivel de Problema: Medio</h2>
-                <p>Centro Acuático: AquaFun</p>
+            <div class="control-section">
+                <input type="text" placeholder="Busque algún lugar de su interés">
             </div>
-            <div class="alerta grave">
-                <h2>Nivel de Problema: Grave</h2>
-                <p>Playa: Costa del Sol</p>
+            <div class="control-section">
+                <h3>¿Qué quiere reportar?</h3>
+                <div class="options">
+                    <button class="option-btn">Oleaje intenso</button>
+                    <button class="option-btn">Peligro externo</button>
+                </div>
+            </div>
+            <div class="control-section">
+                <h3>¿Qué nivel de alerta desea asignar?</h3>
+                <div class="options">
+                    <button class="option-btn">Nivel bajo</button>
+                    <button class="option-btn">Nivel medio</button>
+                    <button class="option-btn active">Nivel alto</button>
+                </div>
+            </div>
+        </div>
+        <div class="map-column">
+            <img src="Imagenes/mapa2.jpg" alt="Mapa">
+            <div class="map-marker">
+                <img src="Imagenes/mapaLogo.png" alt="marcador">
+                <div>
+                    <p>Lima Marina Club</p>
+                    <p>Alerta recibida hace 2 horas</p>
+                </div>
             </div>
         </div>
     </main>

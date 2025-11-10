@@ -69,7 +69,6 @@ body{
     margin-top: 15px; /* Ajusta la posición */
     top: 70%; /* Cambia margin-top por top: 100% */
     border-radius: 25px;
-
 }
 
 .menu-horizontal li:hover .menu-vertical{
