@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuración de Cuenta</title>
+    <title>Historial de Salud</title>
     <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="Styles/Configuracion.css">
+    <link rel="stylesheet" href="Styles/historial_salud.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="top-header">
+    <nav class="top-header">
         <ul class="menu-horizontal">
             <li>
                 <a href="LoggedIndex.html" class="btn-inicio">
@@ -56,7 +56,7 @@
                 </ul>
             </li>
             <li>
-                <a href="Contactanos.html">CONTACTANOS</a>
+                <a href="#Contactanos">CONTACTANOS</a>
                 <ul class="menu-vertical">
                     <li>WhatsApp</li>
                     <li>Instagram</li>
@@ -79,47 +79,57 @@
             </li>
         </ul>
     </nav>
-
-    <main class="config-container">
-        <div class="config-menu">
-            <div class="config-header">
-                <img src="Imagenes/usuario.png" alt="Logo Usuario">
-                <p>Nombre de usuario</p>
-            </div>
-            <div class="config-header-text">
-                <ul>
-                    <li class="active"><a href="Configuracion.html">Configuración General</a></li>
-                    <li><a href="Idioma.html">Idioma</a></li>
-                    <li><a href="Accesibilidad.html">Accesibilidad</a></li>
-                    <li><a href="#">Notificaciones</a></li>
-                    <li><a href="#">Privacidad</a></li>
-                </ul>    
-            </div>
-            
-        </div>
-        <div class="config-content">
-            <div class="content-section">
-                <div class="content">
-                    <h1>General</h1>
-                    
+    <main class="health-history-container">
+        <aside class="sidebar">
+            <div class="menu-item active">
+                <div class="icon">
+                    <div class="triangle"></div>
                 </div>
-                <div class="options">
-                    <p>Cmabiar el Nombre de Usuario</p>
-                    <p>
-                        Al cambiar el nombre de usuario cambiaras como te pueden buscar o como se publicaran tus estadisticas a los demas usuarios
-                    </p>
-                    <button class="btn-general">
-                        <a href="">Cambiar</a>
-                    </button>
-                    <p>Configuracion de Cuenta</p>
-                    <p>Configure cosas genrales de la cuenta (Contraseña,Correo,etc)</p>
-                    <button class="btn-general">
-                        <a href="">Cambiar</a>
-                    </button>
+                <span>Historial de Salud</span>
+            </div>
+        </aside>
+        <section class="main-content">
+            <div class="date-filters">
+                <span class="date-chip">07/10/2025</span>
+                <span class="date-chip">15/10/2025</span>
+            </div>
+            <h3>Ritmo cardiaco promedio</h3>
+            <div class="chart-container">
+                <div class="y-axis">
+                    <span>150</span>
+                    <span>120</span>
+                    <span>90</span>
+                    <span>60</span>
+                    <span>30</span>
+                    <span>0</span>
+                </div>
+                <div class="chart">
+                    <div class="reference-line" style="bottom: 100%;"></div>
+                    <div class="reference-line" style="bottom: 80%;"></div>
+                    <div class="reference-line" style="bottom: 60%;"></div>
+                    <div class="reference-line" style="bottom: 40%;"></div>
+                    <div class="reference-line" style="bottom: 20%;"></div>
+                    <div class="bar" style="height: 60%;"></div>
+                    <div class="bar" style="height: 75%;"></div>
+                    <div class="bar" style="height: 50%;"></div>
+                    <div class="bar" style="height: 85%;"></div>
+                    <div class="bar" style="height: 65%;"></div>
+                    <div class="bar" style="height: 40%;"></div>
+                    <div class="bar" style="height: 70%;"></div>
+                </div>
+                <div class="x-axis">
+                    <span>50</span>
+                    <span>100</span>
+                    <span>150</span>
+                    <span>200</span>
+                    <span>250</span>
+                    <span>300</span>
+                    <span>350</span>
+                    <span>400</span>
                 </div>
             </div>
-        </div>
+            <button class="search-button">Buscar</button>
+        </section>
     </main>
-
 </body>
 </html>
