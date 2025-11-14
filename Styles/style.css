@@ -161,7 +161,7 @@ main{
     display: flex; /* Usa flex */
     padding: 0 !important; /* Quita el padding heredado */
 }
-
+/* boton de inicio*/
 .btn-inicio img{
     margin-left: 10px;
     height: 70px;
