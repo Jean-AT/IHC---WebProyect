@@ -19,7 +19,7 @@ body{
     justify-content: center;
     padding-top: 0px;
 }
-
+/*Cambios css en el menu horizontal*/
 .menu-horizontal{
     list-style: none;
     display: flex;
